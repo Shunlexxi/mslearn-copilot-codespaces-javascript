@@ -1,6 +1,4 @@
-/**
-* CSS file to hold styles that apply across the application
-*/
+/*CSS file to hold styles that apply across the application*/
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
 
@@ -100,6 +98,7 @@ a {
 
 a:hover {
   color: #4e567e;
+  
 }
 
 .container {
@@ -121,5 +120,26 @@ a:hover {
 
 img.socialIcon {
   height: 30px;
-  width: 30px;
+  width: 30px; 
 }
+
+
+@keyframes socialIconAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+div a:hover img {
+  cursor: pointer;
+  opacity: 0.5;
+  animation: socialIconAnimation 0.5s infinite;
+}
+
+
